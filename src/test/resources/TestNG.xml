@@ -1,0 +1,21 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SalesForce TestRetry">
+
+    <listeners>
+        <listener class-name="tests.TestListener"/>
+        <listener class-name="tests.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="Thread#1">
+        <classes>
+            <class name="tests.AccountTest"/>
+        </classes>
+    </test>
+    <test name="Thread#2">
+        <classes>
+            <class name="tests.AccountTest"/>
+        </classes>
+    </test>
+</suite>
